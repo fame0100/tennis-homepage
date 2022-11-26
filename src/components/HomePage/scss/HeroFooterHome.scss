@@ -1,0 +1,11 @@
+@import '@/assets/scss/Variables.scss';
+
+.container{
+    max-width: px2rem(1440);
+    height: px2rem(586);
+    margin: auto;
+}
+
+.img-ctn{
+    object-fit: contain
+}

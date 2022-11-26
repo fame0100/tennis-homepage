@@ -1,0 +1,91 @@
+@import '@/assets/scss/Variables.scss';
+
+.container{
+    font-family: $primary-font;
+    margin: auto;
+    max-width: px2rem(1440);
+    height: px2rem(203);
+}
+
+.container-items{
+    display: flex;
+    justify-content: space-between;
+    background-color: $sickly-yellow;
+    width: 100%;
+    height: 100%;
+}
+
+.container-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-ctn{
+    height: 100%;
+    width: 100%;
+
+    .nav-links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: px2rem(451);
+        height: px2rem(37);
+        padding: 0;
+        margin: px2rem(64) 0 px2rem(13) px2rem(78);
+        font-size: px2rem(13);
+        letter-spacing: px2rem(1.14);    
+    
+        a{
+            text-decoration: none;
+            color: $dark-two;
+            font-weight: normal;
+        }
+    
+        a.router-link-exact-active{
+            color: $dark-two;
+            font-weight: bold;
+        }
+    }
+}
+
+.icons-ctn{
+    height: 100%;
+
+    .icons-links{
+        display: flex;
+        margin: 0 0 0 px2rem(78);
+        padding: 0;
+    
+        .icons{
+            list-style: none;
+            margin: 0 px2rem(12) 0 0;
+            cursor: pointer;
+            img{
+                width: px2rem(31);
+                height: px2rem(31);
+            }
+            &:hover{
+                filter: invert(1);
+            }
+        }
+    }
+}
+
+.container-right{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+
+    .tennis-ball-ctn{
+        height: 100%;
+        img{
+            width: px2rem(55);
+            height: px2rem(55);
+            margin: 77px 63px 71px 0;
+        }
+    }
+}
+
+
+

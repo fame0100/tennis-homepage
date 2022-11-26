@@ -1,0 +1,103 @@
+@import '@/assets/scss/Variables.scss';
+
+.container{
+    font-family: $primary-font;
+    margin: auto;
+    max-width: px2rem(1440);
+}
+
+.container-items{
+    background-color: $bg-grey; 
+    display: flex;
+    margin: px2rem(4) 0 0 px2rem(3);
+    max-width: px2rem(1437);
+    height: px2rem(392);
+}
+
+.tennis-ctn{
+    display: flex;
+
+    .tennis-span{
+        color: $sickly-yellow;
+        font-weight: 500;        
+        font-size: px2rem(15);
+        text-align: right;
+        text-transform: uppercase;
+        line-height: 2;
+        letter-spacing: px2rem(1.87);
+        margin: px2rem(104) 0 0 px2rem(255);
+        width: px2rem(174);
+        height: px2rem(33);
+    }
+}
+
+.title-ctn{
+    text-align: left;
+    
+    .title-span{
+        display: flex;
+        align-items: center;
+        color: $dark;
+        font-size: px2rem(50);
+        font-weight: normal;
+        width: px2rem(555);    
+        height: px2rem(151);
+        letter-spacing: px2rem(-0.06);
+        line-height: 1.14;
+        margin: px2rem(72) 0 px2rem(15) px2rem(51);
+    }
+
+    .title-p{
+        display: flex;
+        align-items: center;
+        color: $text-grey;
+        font-size: px2rem(18);
+        width: px2rem(393);    
+        height: px2rem(87);       
+        line-height: 1.78;
+        margin: px2rem(15) px2rem(162) 0 px2rem(51);
+        letter-spacing: px2rem(0.51);
+    }   
+}
+
+.button-ctn{
+    button{
+        display: flex;
+        align-items: center;
+        color: $text-historia;
+        background-color: transparent;
+        cursor: pointer;      
+        width: px2rem(234);    
+        height: px2rem(53);
+        border-radius: px2rem(26.5);
+        border: solid 1px $border-grey; 
+        padding: 0;
+        margin: px2rem(272) 0 0; 
+
+        .button-span_text{         
+            display: flex;
+            align-items: center;   
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0 px2rem(10) 0 px2rem(38);
+            width: px2rem(125);
+            height: px2rem(23);
+            line-height: 2.15;
+            letter-spacing: px2rem(1.01);
+            color: $text-historia;
+        }
+
+        .button-img_arrow{
+            display: flex;
+            align-items: center;
+            width: px2rem(23);    
+            height: px2rem(6);
+            margin: px2rem(9) 0 px2rem(8) 0;
+        }
+
+        &:hover{
+            background-color: $sickly-yellow;
+            border: 0;
+        }
+    }
+}

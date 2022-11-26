@@ -1,0 +1,181 @@
+@import '@/assets/scss/Variables.scss';
+
+.container{
+    font-family: $primary-font;
+    margin: auto;
+    max-width: px2rem(1440);
+}
+
+.container-items{
+    display: flex;
+    max-width: px2rem(1437);
+    height: px2rem(468);
+    margin: 0 0 0 px2rem(3);
+}
+
+
+.tennis-ball-ctn{
+    background-image: url("/public/img/tennis-ball-slide.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: px2rem(530);
+    height: 100%;
+    text-align: left;
+
+    .tennis-ball_items{
+        margin: px2rem(38) 0 0 px2rem(200);
+    }
+
+    .tennis-ball_nuestras{
+        width: px2rem(259);
+        height: px2rem(151);
+        font-size: px2rem(50);
+        font-weight: normal;
+        line-height: 1.28;
+        letter-spacing: px2rem(-0.06);
+        color: $white;
+
+        .tennis-ball_raquetas{
+            font-weight: bold;
+        }
+    }
+
+    .tennis-ball_info{
+        width: px2rem(303);
+        height: px2rem(122);
+        margin-right: 27px;
+        font-size: px2rem(18);
+        font-weight: normal;
+        line-height: 1.67;
+        letter-spacing: px2rem(0.51);
+        color: $white;
+        display: flex;
+        align-items: center;
+    }
+
+    .tennis-ball_ul{
+        display: flex;
+        padding: 0;
+        margin: px2rem(14) 0 px2rem(35.2) 0;
+
+        .tennis-ball_dots{
+            width: px2rem(8);
+            height: px2rem(7.8);
+            background-color: $dots;
+            border-radius: 50%;
+        }
+        li:nth-child(1){
+            background-color: $sickly-yellow;
+        }
+        li:nth-child(odd){
+            margin: 0 px2rem(24) 0 0;
+        }
+        li:nth-child(even){
+            margin: 0 px2rem(20) 0 0;
+        }
+    }
+
+    .tennis-ball_controls{
+        display: flex;
+        margin: 0 0 0 px2rem(190);
+
+        button{
+            background-color: transparent;
+            border-radius: 50%;
+            width: px2rem(54);            
+            height: px2rem(54);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            img{
+                width: px2rem(9);            
+                height: px2rem(13);
+            }
+
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+
+        .tennis-ball_back{
+            border: px2rem(1) solid $white;
+
+            img{
+                transform: scalex(-1);
+            }
+        }
+
+        .tennis-ball_next{
+            background-color: $sickly-yellow;
+            border: none;
+            margin: 0 0 0 px2rem(19);
+            -webkit-box-shadow: 0px 7px 12px -7px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 7px 12px -7px rgba(0,0,0,1);
+            box-shadow: 0px 7px 12px -7px rgba(0,0,0,1);
+        }
+    }
+
+}
+
+.rackets-ctn{
+    height: 100%;
+
+    .rackets-links{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+
+        li{
+            width: px2rem(288);
+            height: px2rem(344);
+
+            .rackets-links_number{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $sickly-yellow;
+                width: px2rem(39);
+                height: px2rem(39);
+                border-radius: 50%;
+                margin: px2rem(11) px2rem(0) px2rem(0) px2rem(17);
+                position: absolute;
+
+                .rackets-links_span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: px2rem(23);
+                    height: px2rem(33);
+                    font-size: px2rem(17);
+                    line-height: 1.76;
+                    letter-spacing: px2rem(2.11);
+                    text-align: center;
+                    color: $white;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        li:nth-child(1){
+            margin: px2rem(51) px2rem(36) px2rem(73) px2rem(52);
+        }
+
+        li:nth-child(2){
+            margin: px2rem(51) px2rem(31) px2rem(73) 0;
+        }
+
+        li:nth-child(3){
+            margin: px2rem(51) 0 px2rem(73) 0;
+            width: px2rem(212);
+            height: px2rem(344);
+        }
+
+
+    }
+}
+
