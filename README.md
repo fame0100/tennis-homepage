@@ -1,17 +1,24 @@
 # tennis-homepage
 Test
 
-# Installation
-Clone the repository
+## Installation
++ Clone the repository
+```
+git clone https://github.com/fame0100/tennis-homepage.git
+```
 
-> git clone https://github.com/mayur091193/quasar-shopping.git
-
-Install the dependencies
+## Install the dependencies
+```
 cd tennis-homepage
 npm install
+```
 
-To run the app in development mode (hot-code reloading, error reporting, etc.)
+## To run the app in development mode (hot-code reloading, error reporting, etc.)
+```
 npm run serve
+```
 
-Build the application
+## Build the application
+```
 npm run build
+```
